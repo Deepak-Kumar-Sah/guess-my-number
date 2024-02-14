@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
-    <link href="./style.css" rel="stylesheet">
-</head>
-<body>
-<div class="header">
-    <button class="btn" onclick="restore()">Again</button>
-    <p class="txt"> (Between 1 and 20)</p>
-</div>
-<h1>Guess My Number</h1>
-<div class="mysteryBox">
-    <div class="ansBox" id="ans">?</div>
-</div>
-<div class="main">
-    <div class="left">
-        <input type="number" class="inValue" id="userInput" >
-        <button class="btn check" onclick="onCheck()">Check!</button>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press Start 2P"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <button class="btn" onclick="restore()">Again</button>
+      <p class="txt">(Between 1 and 20)</p>
     </div>
-    <div class="right">
+    <h1>Guess My Number</h1>
+    <div class="mysteryBox">
+      <div class="ansBox" id="ans">?</div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <input type="number" class="inValue" id="userInput" />
+        <button class="btn check" onclick="onCheck()">Check!</button>
+      </div>
+      <div class="right">
         <p class="txt">Start guessing ...</p>
         <p class="txt">❤️ Score: <span id="score">20</span></p>
         <p class="txt">🎖️ HighScore: <span id="hScore">0</span></p>
+      </div>
     </div>
-</div>
-<script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
